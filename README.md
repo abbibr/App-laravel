@@ -1,3 +1,4 @@
+<h1>Online Test</h1>
 
 Bu laravel da qilingan loyiha, bu loyihada online test qilingan!
 
