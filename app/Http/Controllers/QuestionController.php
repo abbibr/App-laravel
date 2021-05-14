@@ -43,6 +43,28 @@ class QuestionController extends Controller
         return redirect('questions');
     }
 
+    public function show2()
+    {
+        /* $qs=Question::all();
+        return view('questions')->with(['questions'=>$qs]); */
+        return view('questionform');
+    }
+
+    public function show3(Request $req)
+    {
+        $data=$req->input();
+        $req->session()->put('name',$data['name']);
+        $req->session()->put('password',$data['password']);
+        if(session('name') == 'admin' && session('password') == '12345')
+        {
+           return redirect('questions');
+        }
+        else
+        {
+            return redirect('/');
+        }
+    }
+
     public function show()
     {
         $qs=Question::all();
@@ -152,7 +174,7 @@ class QuestionController extends Controller
         if($this->validate($req,
         [
             'name'=>'required|min:2',
-            'email'=>'required|min:7|email',
+            'email'=>'required|min:7|email|unique:people',
             'password'=>'required|min:7|max:15'
         ]))
         {

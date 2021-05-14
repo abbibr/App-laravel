@@ -26,6 +26,8 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 Route::view('ansDesk','answerDesk');
 
 // Question
+Route::get('question',[QuestionController::class,'show2']);
+Route::post('question1',[QuestionController::class,'show3']);
 Route::get('questions',[QuestionController::class,'show']);
 
 // Start

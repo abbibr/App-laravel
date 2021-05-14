@@ -37,7 +37,7 @@
             .b
             {
                 top:3%;
-                right:1%;
+                right: 1%;
                 position:absolute;
             }
         </style>
@@ -52,10 +52,12 @@
                         <a href="{{ route('login') }}" class="text-md text-gray-700 underline">Kirish</a>
 
                        @if (Route::has('register'))-->
-                            <a href="/boshlash" class="text-md right-100 text-gray-700 underline">Register</a>
+                            <a href="/boshlash" class="btn btn-info">Register</a>
+                            <a href="/question" class="btn btn-info">Add Question</a>
+                </div>
                         <!-- @endif 
                     @endauth -->
-                </div>
+                
             <!--@endif-->
 
             <!-- <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
@@ -72,7 +74,7 @@
                     <div class="grid grid-cols-1 md:grid-cols-2">
                         <div class="p-6">
                             <div class="flex items-center">-->
-        <a href="/start" class="btn btn-info"><p style="text-align:center;">Start quiz!</p></a>
+        <a href="/start" class="btn btn-primary"><p style="text-align:center;">Start quiz!</p></a>
                             </div>
                             <!--<div class="ml-12">
                                 <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">

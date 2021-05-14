@@ -17,7 +17,7 @@
 <div class="col-md-4"></div>
 <div class="col-md-4">
 <h4>#{{Session::get("nextq")}}:{{$question->question}}</h4>
-<img src="{{asset('images')}}/{{$question->profileimage}}" style="max-width:70%;"><br>
+<img src="{{asset('../public/images')}}/{{$question->profileimage}}" style="max-width:70%;"><br>
 <input value="a" checked="true" type="radio" name="ans">: (A) <small>{{$question->a}}</small><br>
 <input value="b" type="radio" name="ans">: (B) <small>{{$question->b}}</small><br>
 <input value="c" type="radio" name="ans">: (C) <small>{{$question->c}}</small><br>

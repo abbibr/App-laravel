@@ -76,7 +76,7 @@
                             <a href="#" class="btn btn-info" data-toggle="modal" data-target="#Modal_update{{$q->id}}">Update</a>
                             <a href="#" class="btn btn-danger" data-toggle="modal" data-target="#Modal_delete{{$q->id}}">Delete</a>
                         </td>
-                        <td><img src="{{asset('images')}}/{{$q->profileimage}}" style="max-width:75px;"></td>
+                        <td><img src="{{asset('../public/images')}}/{{$q->profileimage}}" style="max-width:75px;"></td>
                     </tr>
 <!-- modal update -->
 <div class="modal fade" id="Modal_update{{$q->id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
